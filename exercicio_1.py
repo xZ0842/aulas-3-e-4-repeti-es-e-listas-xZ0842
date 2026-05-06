@@ -19,6 +19,11 @@ Dica: Use o comando "for" junto com "range()" para percorrer os números,
 e uma variável para ir acumulando a soma.
 """
 
+"""
+FORMULA = N+(N-1)+(N-2)+(N-3)...+(N-N)
+"""
+
+
 numero = int(input("Digite um número: "))
 soma = 0
 
@@ -26,3 +31,4 @@ for i in range(1, numero + 1):
     soma += i
 
 print(f"A soma de 1 até {numero} é {soma}.")
+
