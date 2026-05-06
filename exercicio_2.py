@@ -1,5 +1,5 @@
 """
-#### Exercício 1
+#### Exercício 2
 
 Receba um número e calcule o fatorial dele.
 
@@ -25,3 +25,15 @@ Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
 
 Fonte: Curso em vídeo.
 """
+
+"""
+FORMULA: N! = N * (N-1) * (N-2) * ... ( N - (N-1) )
+"""
+
+numero = int(input("Digite um número: "))
+fatorial = 1
+
+for i in range(1, numero + 1):
+    fatorial = fatorial * i
+print(f"O fatorial de {numero} é {fatorial}.")
+
