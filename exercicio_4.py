@@ -1,5 +1,5 @@
 """
-#### Exercício 3 - Comparando listas.
+#### Exercício 4 - Comparando listas.
 
 Receba duas listas de input do usuário. Ele digitará como um texto com os números separados por vígula. 
 Para isso, pode-se utilizar o código disponibilizado que vai transformar esse texto em lista para você.
@@ -27,10 +27,24 @@ Digite a sua segunda lista (separando os números por vírgula): 9, 9, 9, 30
 
 Resposta:
 Ambas
-"""
+
 
 # Código para pegar as listas de input
 primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui
+
+"""
+primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
+segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
+
+maior_primeira = max(primeira_lista)
+maior_segunda = max(segunda_lista)
+
+if maior_primeira > maior_segunda:
+    print("Primeira")
+elif maior_segunda > maior_primeira:
+    print("Segunda")
+else:
+    print("Ambas")
